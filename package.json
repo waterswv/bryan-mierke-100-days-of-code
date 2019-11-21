@@ -1,0 +1,14 @@
+{
+  "name": "bryan-mierke-100-days-of-code",
+  "version": "1.0.0",
+  "description": "Repo tracking my 100 days of code initiative",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Bryan Mierke",
+  "license": "MIT"
+}
