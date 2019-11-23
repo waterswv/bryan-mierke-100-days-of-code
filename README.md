@@ -10,6 +10,7 @@
 ## Days
 1. Day 1 | 11/20/19 | Node Error Types
 2. Day 2 | 11/21/19 | Node REPL & Setup socket connection
+3. Day 3 | 11/22/19 | 4 Types of Streams & EventEmitters
 
 ## Details
 
@@ -22,6 +23,8 @@
 **Day 2** ... Node has a native REPL, but you can also create your own instance
 i.e. To open the native REPL run `node` in your terminal.
 Or you can also setup your own repl using the repl & net Node apis. See the Day 2 code samples for a client & server socket connection running an interactive repl on port 8080.
+
+**Day 3** Node Streams & EventEmitters 
 
 ## Code Samples
 
