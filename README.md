@@ -11,6 +11,7 @@
 1. Day 1 | 11/20/19 | Node Error Types
 2. Day 2 | 11/21/19 | Node REPL & Setup socket connection
 3. Day 3 | 11/22/19 | 4 Types of Streams & EventEmitters
+4. Day 4 | 11/23/19 | Rate of Growth & Big O Notation
 
 ## Details
 
@@ -24,7 +25,10 @@
 i.e. To open the native REPL run `node` in your terminal.
 Or you can also setup your own repl using the repl & net Node apis. See the Day 2 code samples for a client & server socket connection running an interactive repl on port 8080.
 
-**Day 3** Node Streams & EventEmitters 
+**Day 3** Node Streams & EventEmitters
+
+**Day 4** Algorithm efficiency & Big O Notation
+See my gist on run time and algorithm effieciency [HERE](https://gist.github.com/waterswv/b4b028071867b43f196b3bd8e105848f)
 
 ## Code Samples
 
