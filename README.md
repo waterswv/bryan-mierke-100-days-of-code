@@ -29,7 +29,10 @@ Or you can also setup your own repl using the repl & net Node apis. See the Day 
 **Day 3** Node Streams & EventEmitters
 
 **Day 4** Algorithm efficiency & Big O Notation
+
 See my gist on run time and algorithm effieciency [HERE](https://gist.github.com/waterswv/b4b028071867b43f196b3bd8e105848f)
+
+Helpful [Stackoverflow](https://stackoverflow.com/questions/1592649/examples-of-algorithms-which-has-o1-on-log-n-and-olog-n-complexities) examples of algorithm run times.
 
 **Day 5** Binary Search Tree 
 > For the most your binary search tree should have a run-time of O( log n), this is because if we are searching through an array of size n, and halving the array each time time until we get the value we want, that can be expressed as base-2 logarithm of n, AKA O(log n). Logarithm functions grow very slowly and are the inverse of exponentials, which grow very quickly. Worse case scenario you have a lot of values, the run-time is usually O(n).
