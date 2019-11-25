@@ -12,6 +12,7 @@
 2. Day 2 | 11/21/19 | Node REPL & Setup socket connection
 3. Day 3 | 11/22/19 | 4 Types of Streams & EventEmitters
 4. Day 4 | 11/23/19 | Rate of Growth & Big O Notation
+5. Day 5 | 11/24/19 | Binary Search Tree Run time
 
 ## Details
 
@@ -29,6 +30,13 @@ Or you can also setup your own repl using the repl & net Node apis. See the Day 
 
 **Day 4** Algorithm efficiency & Big O Notation
 See my gist on run time and algorithm effieciency [HERE](https://gist.github.com/waterswv/b4b028071867b43f196b3bd8e105848f)
+
+**Day 5** Binary Search Tree 
+> For the most your binary search tree should have a run-time of O( log n), this is because if we are searching through an array of size n, and halving the array each time time until we get the value we want, that can be expressed as base-2 logarithm of n, AKA O(log n). Logarithm functions grow very slowly and are the inverse of exponentials, which grow very quickly. Worse case scenario you have a lot of values, the run-time is usually O(n).
+
+Ref: [Article](https://medium.com/killingmeswiftly/binary-search-tree-18491204c281)
+
+
 
 ## Code Samples
 
