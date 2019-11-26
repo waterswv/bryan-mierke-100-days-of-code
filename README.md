@@ -13,6 +13,7 @@
 3. Day 3 | 11/22/19 | 4 Types of Streams & EventEmitters
 4. Day 4 | 11/23/19 | Rate of Growth & Big O Notation
 5. Day 5 | 11/24/19 | Binary Search Tree Run time
+6. Day 6 | 11/25/19 | Array.keys()
 
 ## Details
 
@@ -39,7 +40,7 @@ Helpful [Stackoverflow](https://stackoverflow.com/questions/1592649/examples-of-
 
 Ref: [Article](https://medium.com/killingmeswiftly/binary-search-tree-18491204c281)
 
-
+**Day 6** Array.keys() function returns an array of position keys for an array regardless if the value of an array is undefined or has been deleted. Unlike Object.keys() which will omit positions keys if the value is undefined.
 
 ## Code Samples
 
