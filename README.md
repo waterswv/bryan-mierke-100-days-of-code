@@ -14,6 +14,7 @@
 4. Day 4 | 11/23/19 | Rate of Growth & Big O Notation
 5. Day 5 | 11/24/19 | Binary Search Tree Run time
 6. Day 6 | 11/25/19 | Array.keys()
+7. Day 7 | 11/26/19 | RegExp with test() & match()
 
 ## Details
 
@@ -41,6 +42,9 @@ Helpful [Stackoverflow](https://stackoverflow.com/questions/1592649/examples-of-
 Ref: [Article](https://medium.com/killingmeswiftly/binary-search-tree-18491204c281)
 
 **Day 6** Array.keys() function returns an array of position keys for an array regardless if the value of an array is undefined or has been deleted. Unlike Object.keys() which will omit positions keys if the value is undefined.
+
+**Day 7** RegExp - you can create as a literal or with new Constructor object. Utilize test() on the regex or you can use match() on the variable. Test will return a boolean while match will return null or an array of the matches.
+See code sample for example of both.
 
 ## Code Samples
 
@@ -71,4 +75,21 @@ net.createServer(socket => {
       socket.end()
     })
 }).listen(8080, port => console.log('Server listeining on port 8080'))
+```
+
+**Day 7**
+```
+let str = 'hithere friend, its nice to hithere friend'
+let str2 = 'ah0 yes'
+
+// 2 identical RegExp variables
+const check2 = /^([^0-9]*)$/
+const rCheck = new RegExp(/^([^0-9]*)$/)
+
+// Match is used on a variable to test and passing regex as variable.
+// Returns Null if false ... Array of matches if true
+str.match(check2)
+
+// test can only be performed on regex passing in variable to check ... will return boolean
+rCheck.test(str2)
 ```
