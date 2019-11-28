@@ -15,6 +15,7 @@
 5. Day 5 | 11/24/19 | Binary Search Tree Run time
 6. Day 6 | 11/25/19 | Array.keys()
 7. Day 7 | 11/26/19 | RegExp with test() & match()
+8. Day 8 | 11/27/19 | Diff ways to create a Closure
 
 ## Details
 
@@ -45,6 +46,8 @@ Ref: [Article](https://medium.com/killingmeswiftly/binary-search-tree-18491204c2
 
 **Day 7** RegExp - you can create as a literal or with new Constructor object. Utilize test() on the regex or you can use match() on the variable. Test will return a boolean while match will return null or an array of the matches.
 See code sample for example of both.
+
+**Day 8** Create a closure with a block of code to lock variables in their execution instances. When using var it's necessary to use patterns, like currying, to ensure variables are locked within their block. Additionally you can use `let` or `const` to make things easier as their es6 syntax works to implement a block scope. `See code sample`
 
 ## Code Samples
 
@@ -79,10 +82,12 @@ net.createServer(socket => {
 
 **Day 7**
 ```
-let str = 'hithere friend, its nice to hithere friend'
+// Random string variables
+
+let str = 'hi there friend, its nice to meet you friend'
 let str2 = 'ah0 yes'
 
-// 2 identical RegExp variables
+// 2 identical RegExp variables that check to NOT include numbers
 const check2 = /^([^0-9]*)$/
 const rCheck = new RegExp(/^([^0-9]*)$/)
 
@@ -92,4 +97,39 @@ str.match(check2)
 
 // test can only be performed on regex passing in variable to check ... will return boolean
 rCheck.test(str2)
+```
+
+**Day 8**
+```
+// Test array for our closure loops
+	const arr = ['a', 'b', 'c', 'd']
+// This loop will spit out 4 and undefined 4 times.
+	for(var i = 0; i < arr.length; i++){
+			setTimeout(function() {
+			console.log('The index is ' + i + ' and arr value is ' + arr[i])
+		}, 2000)
+	}
+
+	// Closure created around a var variable ... this will work
+	for(var i = 0; i < arr.length; i++){
+		// let idx = i
+		(function timer(i) {
+			setTimeout(function() {
+			console.log('The index is ' + i + ' and arr value is ' + arr[i])
+		}, 2000)
+		})(i)		
+	}
+	// closure created with let block scoping index ... this will work
+  for(let i = 0; i < arr.length; i++){
+			setTimeout(function() {
+			console.log('V2 The index is ' + i + ' and arr value is ' + arr[i])
+		}, 2000)		
+	}
+	// closure created by using let within loop ... this will work
+	for(var i = 0; i < arr.length; i++){
+			let idx = i
+			setTimeout(function() {
+			console.log('V3 The index is ' + idx + ' and arr value is ' + arr[idx])
+		}, 2000)
+	}
 ```
