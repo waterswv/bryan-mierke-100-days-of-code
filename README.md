@@ -102,34 +102,40 @@ rCheck.test(str2)
 **Day 8**
 ```
 // Test array for our closure loops
-	const arr = ['a', 'b', 'c', 'd']
-// This loop will spit out 4 and undefined 4 times.
-	for(var i = 0; i < arr.length; i++){
-			setTimeout(function() {
-			console.log('The index is ' + i + ' and arr value is ' + arr[i])
-		}, 2000)
-	}
+const arr = ['a', 'b', 'c', 'd']
 
-	// Closure created around a var variable ... this will work
-	for(var i = 0; i < arr.length; i++){
-		// let idx = i
-		(function timer(i) {
-			setTimeout(function() {
-			console.log('The index is ' + i + ' and arr value is ' + arr[i])
+// This loop will spit out 4 and undefined 4 times.
+
+for(var i = 0; i < arr.length; i++){
+	setTimeout(function() {
+		console.log('The index is ' + i + ' and arr value is ' + arr[i])
+	}, 2000)
+}
+
+// Closure created around a var variable ... this will work
+
+for(var i = 0; i < arr.length; i++){
+	(function timer(i) {
+		setTimeout(function() {
+		  console.log('The index is ' + i + ' and arr value is ' + arr[i])
 		}, 2000)
-		})(i)		
-	}
-	// closure created with let block scoping index ... this will work
-  for(let i = 0; i < arr.length; i++){
-			setTimeout(function() {
-			console.log('V2 The index is ' + i + ' and arr value is ' + arr[i])
-		}, 2000)		
-	}
-	// closure created by using let within loop ... this will work
-	for(var i = 0; i < arr.length; i++){
-			let idx = i
-			setTimeout(function() {
-			console.log('V3 The index is ' + idx + ' and arr value is ' + arr[idx])
-		}, 2000)
-	}
+	})(i)		
+}
+	
+// closure created with let block scoping index ... this will work
+  
+for(let i = 0; i < arr.length; i++){
+	setTimeout(function() {
+	  console.log('V2 The index is ' + i + ' and arr value is ' + arr[i])
+	}, 2000)		
+}
+
+// closure created by using let within loop ... this will work
+	
+for(var i = 0; i < arr.length; i++){
+	let idx = i
+	setTimeout(function() {
+		console.log('V3 The index is ' + idx + ' and arr value is ' + arr[idx])
+	}, 2000)
+}
 ```
