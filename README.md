@@ -16,7 +16,7 @@
 6. Day 6 | 11/25/19 | Array.keys()
 7. Day 7 | 11/26/19 | RegExp with test() & match()
 8. Day 8 | 11/27/19 | Diff ways to create a Closure
-9. Day 9 | 12/02/19 | 
+9. Day 9 | 12/02/19 | jQuery Data Fetching in React
 10. Day 10 | 12/03/19 | Arrow Functions & this
 
 ## Details
