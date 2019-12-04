@@ -51,7 +51,7 @@ See code sample for example of both.
 
 **Day 8** Create a closure with a block of code to lock variables in their execution instances. When using var it's necessary to use patterns, like currying, to ensure variables are locked within their block. Additionally you can use `let` or `const` to make things easier as their es6 syntax works to implement a block scope. `See code sample`
 
-**Day 9**
+**Day 9** Had to use jQuery in a live code interview recently. Made a codesandbox to refresh on Promises on how I fetched data with jQuery in React. 'Synchronous' vers, Async/Await, and Promises implementation. [Code Sandbox](https://codesandbox.io/s/awesome-sun-1wgkb?fontsize=14&hidenavigation=1&theme=dark)
 
 **Day 10** Arrow functions & this. If you need to access the *this* object within a callback or function scope; Make sure you use a function () { } block instead of an arrow function () => {}. Arrow functions just inherit *this* from their parent block as they do not rebind on execution. Code sample below.
 
