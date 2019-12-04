@@ -55,6 +55,9 @@ See code sample for example of both.
 
 **Day 10** Arrow functions & this. If you need to access the *this* object within a callback or function scope; Make sure you use a function () { } block instead of an arrow function () => {}. Arrow functions just inherit *this* from their parent block as they do not rebind on execution. Code sample below.
 
+**Day 11** Self-signed SSL cert for Development & serving over *https*
+As a practice we should always use SSL connections. To achieve this practice we can use the following code to create a self-signed cert so we can use the node HTTPS module durving dev; just be aware it doesn't demonstrate identity. 
+
 ## Code Samples
 
 **Day 2:**
@@ -163,4 +166,22 @@ for(var i = 0; i < arr.length; i++){
 		// Arrow functions do not ReBind 'this'
         this.classList.toggle(first)
  }
+```
+**Day 11**
+```
+// Generate a Cert in the Terminal
+openssl genrsa -out server-key.pem 2048
+ openssl req -new -key server-key.pem -out server-csr.pem
+ openssl x509 -req -in server-csr.pem -signkey server-key.pem -out server-cert.pem
+
+// Using cert during server init
+const https = require('https')
+const fs = require('fs')
+
+https.createServer({
+	key: fs.readFileSync('server-key.pem'),
+	cert: fs.readFileSync('server-cert.pem')
+}, (req, res) => {
+	// Any additional server funcs or config goes here
+}).listen(443)
 ```
