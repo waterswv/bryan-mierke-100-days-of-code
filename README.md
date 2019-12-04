@@ -16,6 +16,8 @@
 6. Day 6 | 11/25/19 | Array.keys()
 7. Day 7 | 11/26/19 | RegExp with test() & match()
 8. Day 8 | 11/27/19 | Diff ways to create a Closure
+9. Day 9 | 12/02/19 | 
+10. Day 10 | 12/03/19 | Arrow Functions & this
 
 ## Details
 
@@ -48,6 +50,10 @@ Ref: [Article](https://medium.com/killingmeswiftly/binary-search-tree-18491204c2
 See code sample for example of both.
 
 **Day 8** Create a closure with a block of code to lock variables in their execution instances. When using var it's necessary to use patterns, like currying, to ensure variables are locked within their block. Additionally you can use `let` or `const` to make things easier as their es6 syntax works to implement a block scope. `See code sample`
+
+**Day 9**
+
+**Day 10** Arrow functions & this. If you need to access the *this* object within a callback or function scope; Make sure you use a function () { } block instead of an arrow function () => {}. Arrow functions just inherit *this* from their parent block as they do not rebind on execution. Code sample below.
 
 ## Code Samples
 
@@ -138,4 +144,23 @@ for(var i = 0; i < arr.length; i++){
 		console.log('V3 The index is ' + idx + ' and arr value is ' + arr[idx])
 	}, 2000)
 }
+```
+
+**Day 10**
+```
+// Correct
+ item.addEventListener('click', function() {
+        let myClass = 'my-class'
+        
+        // Toggles on & off a class from the classes array
+        this.classList.toggle(first)
+ }
+ // Incorrect
+ item.addEventListener('click', () => {
+        let myClass = 'my-class'
+        
+        // if this is placed within a script tag this would be bound to the Window Object
+		// Arrow functions do not ReBind 'this'
+        this.classList.toggle(first)
+ }
 ```
