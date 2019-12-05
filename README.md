@@ -58,6 +58,8 @@ See code sample for example of both.
 **Day 11** Self-signed SSL cert for Development & serving over *https*
 As a practice we should always use SSL connections. To achieve this practice we can use the following code to create a self-signed cert so we can use the node HTTPS module durving dev; just be aware it doesn't demonstrate identity. 
 
+**Day 12** SVG is Cool. HTML5 svg elements allow you to define a pattern and then use that pattern to fill an entire shape! `<defs> <pattern> <circle>` Code sample below. Ref: [MDN Example](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/pattern)
+
 ## Code Samples
 
 **Day 2:**
@@ -184,4 +186,20 @@ https.createServer({
 }, (req, res) => {
 	// Any additional server funcs or config goes here
 }).listen(443)
+```
+
+**Day 12**
+```
+    <div>
+      <svg viewBox="0 0 230 100" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="star" viewBox="0,0,10,10" width="10%" height="10%">
+            <polygon points="0,0 2,5 0,10 5,8 10,10 8,5 10,0 5,2" />
+          </pattern>
+        </defs>
+
+        <circle cx="50" cy="50" r="50" fill="url(#star)" />
+   
+      </svg>
+    </div>
 ```
