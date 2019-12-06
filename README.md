@@ -18,6 +18,9 @@
 8. Day 8 | 11/27/19 | Diff ways to create a Closure
 9. Day 9 | 12/02/19 | jQuery Data Fetching in React
 10. Day 10 | 12/03/19 | Arrow Functions & this
+11. Day 11 | 12/04/19 | Self signing ssl certs
+12. Day 12 | 12/05/19 | SVG defs and patterns
+13. Day 13 | 12/05/19 | Catch up day - Rename variable during destructuring
 
 ## Details
 
@@ -59,6 +62,8 @@ See code sample for example of both.
 As a practice we should always use SSL connections. To achieve this practice we can use the following code to create a self-signed cert so we can use the node HTTPS module durving dev; just be aware it doesn't demonstrate identity. 
 
 **Day 12** SVG is Cool. HTML5 svg elements allow you to define a pattern and then use that pattern to fill an entire shape! `<defs> <pattern> <circle>` Code sample below. Ref: [MDN Example](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/pattern)
+
+**Day 13** Object destructuring in JS is a cool feature. Quickly access obj variables `const { name, age } = person`. You can even rename the variables in the event you want to be more specific or change details. i.e. `const { name: firstName, age } = person` Where name has been changed to firstName!
 
 ## Code Samples
 
