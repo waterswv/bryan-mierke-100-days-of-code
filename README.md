@@ -21,7 +21,7 @@
 11. Day 11 | 12/04/19 | Self signing ssl certs
 12. Day 12 | 12/05/19 | SVG defs and patterns
 13. Day 13 | 12/05/19 | Catch up day - Rename variable during destructuring
-14. 
+14. Day 14 | 12/06/19 | Flip values with destructuring
 15. Day 15 | 12/07/19 | Promise Error Handling
 
 ## Details
