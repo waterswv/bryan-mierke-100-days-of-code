@@ -21,6 +21,8 @@
 11. Day 11 | 12/04/19 | Self signing ssl certs
 12. Day 12 | 12/05/19 | SVG defs and patterns
 13. Day 13 | 12/05/19 | Catch up day - Rename variable during destructuring
+14. 
+15. Day 15 | 12/07/19 | Promise Error Handling
 
 ## Details
 
@@ -64,6 +66,10 @@ As a practice we should always use SSL connections. To achieve this practice we 
 **Day 12** SVG is Cool. HTML5 svg elements allow you to define a pattern and then use that pattern to fill an entire shape! `<defs> <pattern> <circle>` Code sample below. Ref: [MDN Example](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/pattern)
 
 **Day 13** Object destructuring in JS is a cool feature. Quickly access obj variables `const { name, age } = person`. You can even rename the variables in the event you want to be more specific or change details. i.e. `const { name: firstName, age } = person` Where name has been changed to firstName!
+
+**Day 14** You can flip 2 values in an array with destructuring. [ val1, val2 ] = [ val2, val1 ] ... val1 is now val2
+
+**Day 15** Promise Error hndling can use single catch i.e. then().then().catch() but if you want to continue chain you need a catch() after each then() since errors cause every subsequent then() block 2 be skipped until catch block occurs.
 
 ## Code Samples
 
