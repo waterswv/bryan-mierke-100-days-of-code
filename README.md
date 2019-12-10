@@ -23,6 +23,8 @@
 13. Day 13 | 12/05/19 | Catch up day - Rename variable during destructuring
 14. Day 14 | 12/06/19 | Flip values with destructuring
 15. Day 15 | 12/07/19 | Promise Error Handling
+16. Day 16 | 12/08/19 | Array.from()
+17. Day 17 | 12/09/19 | For...of w/ destructuring
 
 ## Details
 
@@ -70,6 +72,10 @@ As a practice we should always use SSL connections. To achieve this practice we 
 **Day 14** You can flip 2 values in an array with destructuring. [ val1, val2 ] = [ val2, val1 ] ... val1 is now val2
 
 **Day 15** Promise Error hndling can use single catch i.e. then().then().catch() but if you want to continue chain you need a catch() after each then() since errors cause every subsequent then() block 2 be skipped until catch block occurs.
+
+**Day 16** Array.from() can be used to convert any set of items, nodes, dom element NodeList into an array. `const newArray = Array.from(document.querySelectorAll('div'))` 
+
+**Day 17** a for...of loop will provide you with every item in an array without the clunky index intiatlizing and length count. If you need to grab the index then you can use Array.prototype.entries() and destructure the index and value during loop definition as it creats an iterable. `for(const [idx, item] of items.entries()){ ... }`
 
 ## Code Samples
 
