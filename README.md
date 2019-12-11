@@ -25,6 +25,8 @@
 15. Day 15 | 12/07/19 | Promise Error Handling
 16. Day 16 | 12/08/19 | Array.from()
 17. Day 17 | 12/09/19 | For...of w/ destructuring
+18. Day 18 | 12/10/19 | Node querystring module
+19. Day 19 | 12/11/19 | 
 
 ## Details
 
@@ -76,6 +78,11 @@ As a practice we should always use SSL connections. To achieve this practice we 
 **Day 16** Array.from() can be used to convert any set of items, nodes, dom element NodeList into an array. `const newArray = Array.from(document.querySelectorAll('div'))` 
 
 **Day 17** a for...of loop will provide you with every item in an array without the clunky index intiatlizing and length count. If you need to grab the index then you can use Array.prototype.entries() and destructure the index and value during loop definition as it creats an iterable. `for(const [idx, item] of items.entries()){ ... }`
+
+**Day 18** Nodes querystring module has a parse & stringify method to generate a key:value pair object from a qrystr & vice versa respectively. `querystring.parse(search=food&limit=5) // results in {search: food, limit: 5}`
+
+**Day 19** 
+
 
 ## Code Samples
 
@@ -219,4 +226,18 @@ https.createServer({
    
       </svg>
     </div>
+```
+**Day 18**
+```
+const qs = require('querystring')
+
+qs.parse('search=food&limit=5')
+// returns a object { search: food, limit: 5 }
+
+qs.stringify({
+	search: food,
+	limit: 5,
+	offset: 2
+})
+// returns a string 'search=food&limit=5&offset=2'
 ```
