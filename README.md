@@ -26,7 +26,7 @@
 16. Day 16 | 12/08/19 | Array.from()
 17. Day 17 | 12/09/19 | For...of w/ destructuring
 18. Day 18 | 12/10/19 | Node querystring module
-19. Day 19 | 12/11/19 | 
+19. Day 19 | 12/11/19 | Custom node querystring seperator & assingment
 
 ## Details
 
@@ -81,7 +81,7 @@ As a practice we should always use SSL connections. To achieve this practice we 
 
 **Day 18** Nodes querystring module has a parse & stringify method to generate a key:value pair object from a qrystr & vice versa respectively. `querystring.parse(search=food&limit=5) // results in {search: food, limit: 5}`
 
-**Day 19** 
+**Day 19** Continuing with nodes qs module. You can have custom separator and assignment args passed respectively 2nd and 3rd. i.e. querystring.parse('search:food%limit:5%offset:2', '%', ':')
 
 
 ## Code Samples
@@ -240,4 +240,17 @@ qs.stringify({
 	offset: 2
 })
 // returns a string 'search=food&limit=5&offset=2'
+```
+
+**Day 19**
+```
+const qs = require('querystring')
+
+// seperator is % instead of &
+// assignment is : instead of =
+qs.parse('search:food%limit:5%offset:2', '%', ':')
+
+// returns a object { search: food, limit: 5, offset: 2 }
+
+
 ```
