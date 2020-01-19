@@ -27,6 +27,49 @@
 17. Day 17 | 12/09/19 | For...of w/ destructuring
 18. Day 18 | 12/10/19 | Node querystring module
 19. Day 19 | 12/11/19 | Custom node querystring seperator & assingment
+20. Day 20 | 12/12/19 | Find the smallest value in an object
+21. Day 21 | 12/13/19 | 
+22. Day 22 | 12/14/19
+...
+23. Day 23 | 12/15/19
+24. Day 24 | 12/16/19
+25. Day 25 | 12/17/19
+25. Day 26 | 12/18/19
+26. Day 27 | 12/19/19
+27. Day 28 | 12/20/19
+28. Day 29 | 12/21/19
+29. Day 30 | 12/22/19
+30. Day 31 | 12/23/19
+--. Day -- | 12/24/19 | Holiday
+--. Day -- | 12/25/19 | Holiday
+32. Day 32 | 12/26/19
+33. Day 33 | 12/27/19
+34. Day 34 | 12/28/19
+35. Day 35 | 12/29/19
+36. Day 36 | 12/30/19
+37. Day 37 | 12/31/19
+--. Day -- | 1/1/20 | Holiday
+38. Day 38 | 1/2/20 | 
+39. Day 39 | 1/3/20 | 
+39. Day 40 | 1/4/20 | 
+39. Day 41 | 1/5/20 | 
+39. Day 42 | 1/6/20 | 
+39. Day 43 | 1/7/20 | 
+39. Day 44 | 1/8/20 | 
+39. Day 45 | 1/9/20 | 
+39. Day 46 | 1/10/20 | 
+39. Day 47 | 1/11/20 | 
+39. Day 48 | 1/12/20 | 
+39. Day 49 | 1/13/20 | 
+39. Day 50 | 1/14/20 | 
+39. Day 51 | 1/15/20 | 
+39. Day 52 | 1/16/20 | 
+39. Day 53 | 1/17/20 | Constructors
+39. Day 54 | 1/18/20 | Switch case with costructors
+39. Day 55 | 1/19/20 | Subclasses
+
+
+
 
 ## Details
 
@@ -82,6 +125,8 @@ As a practice we should always use SSL connections. To achieve this practice we 
 **Day 18** Nodes querystring module has a parse & stringify method to generate a key:value pair object from a qrystr & vice versa respectively. `querystring.parse(search=food&limit=5) // results in {search: food, limit: 5}`
 
 **Day 19** Continuing with nodes qs module. You can have custom separator and assignment args passed respectively 2nd and 3rd. i.e. querystring.parse('search:food%limit:5%offset:2', '%', ':')
+
+**Day 20** Use reduce to find the smallest value in an object. Use Object.keys(Your_Obj_Variable) to grab the keys then pass in the object & keys to a reduce function. Code sample below.
 
 
 ## Code Samples
@@ -253,4 +298,13 @@ qs.parse('search:food%limit:5%offset:2', '%', ':')
 // returns a object { search: food, limit: 5, offset: 2 }
 
 
+```
+**Day 20**
+```
+function minimum (keys, obj) {
+  return keys.reduce((acc, key) => {
+    if (acc <= obj[key]) return acc
+    return obj[key]
+  }, undefined)
+}
 ```
