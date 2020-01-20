@@ -28,45 +28,45 @@
 18. Day 18 | 12/10/19 | Node querystring module
 19. Day 19 | 12/11/19 | Custom node querystring seperator & assingment
 20. Day 20 | 12/12/19 | Find the smallest value in an object
-21. Day 21 | 12/13/19 | 
-22. Day 22 | 12/14/19
+21. Day 21 | 12/13/19 | Symbols
+22. Day 22 | 12/14/19 | Iterator
 ...
-23. Day 23 | 12/15/19
-24. Day 24 | 12/16/19
-25. Day 25 | 12/17/19
-25. Day 26 | 12/18/19
-26. Day 27 | 12/19/19
-27. Day 28 | 12/20/19
-28. Day 29 | 12/21/19
-29. Day 30 | 12/22/19
-30. Day 31 | 12/23/19
+23. Day 23 | 12/15/19 | Generator
+24. Day 24 | 12/16/19 | Lodash deepClone
+25. Day 25 | 12/17/19 | private & readonly class
+26. Day 26 | 12/18/19 | .zshrc setup
+27. Day 27 | 12/19/19 | .npmrc file
+28. Day 28 | 12/20/19 | using nvm
+29. Day 29 | 12/21/19 | using ssh with git
+30. Day 30 | 12/22/19 | Angular CLI setup
+31. Day 31 | 12/23/19 | ng generate component
 --. Day -- | 12/24/19 | Holiday
 --. Day -- | 12/25/19 | Holiday
-32. Day 32 | 12/26/19
-33. Day 33 | 12/27/19
-34. Day 34 | 12/28/19
-35. Day 35 | 12/29/19
-36. Day 36 | 12/30/19
-37. Day 37 | 12/31/19
+32. Day 32 | 12/26/19 | Angular directive
+33. Day 33 | 12/27/19 | Function decorator
+34. Day 34 | 12/28/19 | typescript class
+35. Day 35 | 12/29/19 | typescript implements
+36. Day 36 | 12/30/19 | typescript instanceOf
+37. Day 37 | 12/31/19 | Using artifactory
 --. Day -- | 1/1/20 | Holiday
-38. Day 38 | 1/2/20 | 
-39. Day 39 | 1/3/20 | 
-39. Day 40 | 1/4/20 | 
-39. Day 41 | 1/5/20 | 
-39. Day 42 | 1/6/20 | 
-39. Day 43 | 1/7/20 | 
-39. Day 44 | 1/8/20 | 
-39. Day 45 | 1/9/20 | 
-39. Day 46 | 1/10/20 | 
-39. Day 47 | 1/11/20 | 
-39. Day 48 | 1/12/20 | 
-39. Day 49 | 1/13/20 | 
-39. Day 50 | 1/14/20 | 
-39. Day 51 | 1/15/20 | 
-39. Day 52 | 1/16/20 | 
-39. Day 53 | 1/17/20 | Constructors
-39. Day 54 | 1/18/20 | Switch case with costructors
-39. Day 55 | 1/19/20 | Subclasses
+38. Day 38 | 1/2/20 | Generator Function
+39. Day 39 | 1/3/20 | Observable in Angular
+40. Day 40 | 1/4/20 | Pipe in RXjs
+41. Day 41 | 1/5/20 | Map in RXjs
+42. Day 42 | 1/6/20 | WeakMap
+43. Day 43 | 1/7/20 | Get & Set methods
+44. Day 44 | 1/8/20 | Angular component example
+45. Day 45 | 1/9/20 | Angular service example
+46. Day 46 | 1/10/20 | CSS Breakword property
+47. Day 47 | 1/11/20 | Lodash concat
+48. Day 48 | 1/12/20 | Lodash merge
+49. Day 49 | 1/13/20 | Lodash keys
+50. Day 50 | 1/14/20 | Constructors
+51. Day 51 | 1/15/20 | Switch case with costructors
+52. Day 52 | 1/16/20 | Subclasses
+53. Day 53 | 1/17/20 | Basic ngrx reducer
+54. Day 54 | 1/18/20 | ngrx selector
+55. Day 55 | 1/19/20 | Subject Observable
 
 
 
